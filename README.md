@@ -1,58 +1,10 @@
-# schwamg_final_project_data
-Data collected for statistics project about journalism sources. 
+STA 215 Final Project
 
-## set working directory
-setwd("/courses/STA145/schwamg1")
-
-# Load packages
-# NOTE: Run base.R if these commands return an error!
-library(readr)
-library(read_csv"/courses/STA145/schwamg1/data.csv")
-
-# load dataset into environment
-library(readr)
-data <- read_delim("data.csv")
-View(data)
-
-##################################################################################
-###############  Table 1: Descriptive Statistics  ################################  
-##################################################################################
-
-# generate statistics for word count
-summary(data$word_count)
-mean(data$word_count)
-sd(data$word_count)
-
-# generate statistics for title words
-summary(data$title_words)
-mean(data$title_words)
-sd(data$title_words)
-
-##################################################################################
-####################   Figure 1: Scatter Plot  ###################################   
-##################################################################################
-linear_plot <- plot(data$word_count, data$title_words)
-print(linear_plot)
-meany <- mean(data$title_words)
-meanx <- mean(data$word_count)
-abline(h = meanx, col = "black")
-abline(v = meany, col = "black")
-linear_relationship <- lm(word_count ~ title_words, data = data)
-summary(linear_relationship)
-abline(linear_relationship, col = "red")
-
-##################################################################################
-####################  Figure 2: residual plot  ###################################   
-##################################################################################
-# Plot the residuals
-plot(data$title_words, residuals(linear_relationship))
-plot(data$word_count, residuals(linear_relationship))
-
-# Add a horizontal line at zero to indicate the baseline
-abline(h = 0, col = "red")
-
-##################################################################################
-####################  Table 2: Regression/Correlation Table  #####################   
-##################################################################################
-table(data$title_words, data$word_count)
-t.test(data$title_words, data$word_count, data = data, var.equal = TRUE)
+This is my replication package for my STA 145 final project. I took recent articles from the New York Times and analyzed the word counts, titles, if the article contained statistics, article categories, length of author’s name, engagement, cultural relevance, images in article, maps in article, purpose, and coverage level. I decided to figure out if there is a relationship between the word count and title words in recent articles from the New York Times.
+Instructions
+In order to access and use this script, open the "STA145-SCHWAMG.R" file, which has the code for my project. In order to access the data, open the "FINAL PROJECT DATA - Sheet1.csv" file.
+Data
+The data that was collected for this project contains recent articles from the New York Times from a range of article categories. Since the New York Times covers a wide range of categories, the main goal of my analysis was to only compare the title words and word count of the articles that were compiled. I analyzed the word count by clicking on each article, highlighting the entire article, and pasting it into a Google Doc to get the word count. I analyzed the title words by counting the number of words in each article’s title. 
+Operationalization
+To operationalize the number of words per article, I went to each article and recorded the number of words after pasting it into a Google Doc. 
+To operationalize the number of words per title, I counted the number of words in each title per article. 
