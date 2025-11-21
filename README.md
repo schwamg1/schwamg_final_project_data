@@ -4,7 +4,7 @@ This is my replication package for my STA 145 final project. I took recent artic
 
 Instructions
 
-In order to access and use this script, open the "STA145-SCHWAMG.R" file, which has the code for my project. In order to access the data, open the "FINAL PROJECT DATA - Sheet1.csv" file.
+In order to access and use this script, open the "STA145-SCHWAMG.R" file, which has the code for my project. In order to access the data, open the "FINAL_PROJECT_DATA.csv" file.
 
 Data
 
