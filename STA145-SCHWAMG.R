@@ -39,7 +39,7 @@ summary(linear_relationship)
 abline(linear_relationship, col = "red")
 
 ##################################################################################
-####################  Figure 2: residual plot  ###################################   
+####################  Figure 2: Residual Plot  ###################################   
 ##################################################################################
 # Plot the residuals
 plot(data$title_words, residuals(linear_relationship))
