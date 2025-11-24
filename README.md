@@ -1,4 +1,4 @@
-STA 215 Final Project
+STA 145 Final Project
 
 This is my replication package for my STA 145 final project. I took recent articles from the New York Times and analyzed the word counts, titles, if the article contained statistics, article categories, length of author’s name, engagement, cultural relevance, images in article, maps in article, purpose, and coverage level. I decided to figure out if there is a relationship between the word count and title words in recent articles from the New York Times.
 
