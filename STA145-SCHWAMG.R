@@ -47,9 +47,3 @@ plot(data$word_count, residuals(linear_relationship))
 
 # Add a horizontal line at zero to indicate the baseline
 abline(h = 0, col = "red")
-
-##################################################################################
-####################  Table 2: Regression/Correlation Table  #####################   
-##################################################################################
-table(data$title_words, data$word_count)
-t.test(data$title_words, data$word_count, data = data, var.equal = TRUE)
